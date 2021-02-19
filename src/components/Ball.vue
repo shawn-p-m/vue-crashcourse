@@ -53,9 +53,4 @@ button {
   margin: 0.5rem;
   border-radius: 5px;
 }
-
-button:hover {
-  color: white;
-  background-color: black;
-}
 </style>

@@ -24,5 +24,8 @@ export default {
     return apiClient.patch("/balls/" + id, {
       count: upCount
     });
+  },
+  createBall(createdColor) {
+    return apiClient.post("balls/", { color: createdColor, count: 1 });
   }
 };

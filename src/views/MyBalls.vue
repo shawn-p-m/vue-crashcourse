@@ -28,3 +28,11 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+</style>

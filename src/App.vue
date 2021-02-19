@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">My Balls</router-link> |
-      <router-link to="/other-page">Other Page</router-link>
+      <router-link to="/create-ball">Create a Ball</router-link>
     </div>
     <router-view />
   </div>
@@ -28,5 +28,14 @@
       color: #42b983;
     }
   }
+}
+
+button {
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+button:hover {
+  color: white;
+  background-color: black;
 }
 </style>
