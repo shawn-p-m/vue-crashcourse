@@ -1,5 +1,7 @@
 # Vue Crash Course 
 Download node if you don't have it installed already.
+
+## Setup Frontend 
 From the directory you want to make app in run the commands:
 ``` 
 npm i @vue/cli -g 
@@ -7,9 +9,7 @@ npm i @vue/cli -g
 ``` 
 vue create vue-crashcourse-myversion 
 ```
-```
-cd vue-crashcourse-myversion
-```
+
 
 
 Choose the following when prompted:  
@@ -22,10 +22,33 @@ Choose the following when prompted:
 ? Pick additional lint features: Lint on save  
 ? Where do you prefer placing config for Babel, ESLint, etc.? In dedicated config files  
 ? Save this as a preset for future projects? No  
-
+```
+cd vue-crashcourse-myversion
+```
+```
+npm install axios
+```
 ```
 npm run serve
 ```
+
+## Setup Pseudo Server
+Create file in root directory called data.json
+
+Keep other terminal running and open a new terminal. Then put in the following commands from root:
+```
+npm i -g json-server
+```
+```
+json-server --watch data.json
+```
+
+
+
+
+
+
+
 
 This command makes a dist folder that has all your files and folders necessary for deployment:
 ```

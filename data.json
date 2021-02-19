@@ -1,0 +1,19 @@
+{
+  "balls": [
+    {
+      "id": 1,
+      "color": "black",
+      "count": 7
+    },
+    {
+      "id": 2,
+      "color": "red",
+      "count": 1
+    },
+    {
+      "id": 3,
+      "color": "blue",
+      "count": 1
+    }
+  ]
+}
