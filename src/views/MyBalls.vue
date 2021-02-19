@@ -1,6 +1,12 @@
 <template>
   <div class="home">
-    <Ball v-for="ball in balls" :key="ball.id" :ball="ball" />
+    <Ball
+      @killBall="killBall"
+      v-for="ball in balls"
+      :key="ball.id"
+      :ball="ball"
+      :indexOfBall="balls.indexOf(ball) + 1"
+    />
   </div>
 </template>
 
@@ -11,6 +17,16 @@ import EventService from "@/services/EventService.js";
 export default {
   name: "MyBalls",
   components: { Ball },
+  methods: {
+    killBall(id) {
+      for (let i = 0; i < this.balls.length; i++) {
+        const ball = this.balls[i];
+        if (ball.id === id) {
+          this.balls.splice(i, 1);
+        }
+      }
+    }
+  },
   data() {
     return {
       balls: []

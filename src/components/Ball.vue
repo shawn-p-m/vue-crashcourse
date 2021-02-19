@@ -1,6 +1,6 @@
 <template>
   <div class="ball" :style="{ color: ball.color }">
-    <h2>Ball #{{ ball.id }}</h2>
+    <h2>Ball #{{ indexOfBall }}</h2>
 
     <p>How many Balls? {{ ball.count }}</p>
     <div>
@@ -16,6 +16,9 @@ export default {
   props: {
     ball: {
       type: Object
+    },
+    indexOfBall: {
+      type: Number
     }
   },
   methods: {
@@ -26,11 +29,14 @@ export default {
       });
     },
     minusBall() {
-      if (this.ball.count > 0) {
+      if (this.ball.count > 1) {
         this.ball.count--;
         EventService.minusBall(this.ball.id, this.ball.count).catch(err => {
           console.log(err);
         });
+      } else {
+        EventService.killBall(this.ball.id);
+        this.$emit("killBall", this.ball.id);
       }
     }
   }
@@ -39,13 +45,14 @@ export default {
 
 <style lang="scss" scoped>
 .ball {
-  padding: 2rem;
+  padding: 3rem;
   flex-direction: column;
   display: flex;
   margin: 1rem auto;
-  width: fit-content;
+  width: 150px;
   background-color: lightgray;
-  border-radius: 100px;
+  border-radius: 150px;
+  border: 1px solid black;
 }
 
 button {

@@ -38,4 +38,9 @@ button:hover {
   color: white;
   background-color: black;
 }
+
+button:active {
+  color: slategray;
+  background-color: #2c3e50;
+}
 </style>

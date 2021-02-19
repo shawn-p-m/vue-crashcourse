@@ -27,5 +27,8 @@ export default {
   },
   createBall(createdColor) {
     return apiClient.post("balls/", { color: createdColor, count: 1 });
+  },
+  killBall(idOfBallToKill) {
+    return apiClient.delete("balls/" + idOfBallToKill);
   }
 };

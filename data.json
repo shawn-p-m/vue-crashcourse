@@ -3,112 +3,12 @@
     {
       "id": 1,
       "color": "black",
-      "count": 9
-    },
-    {
-      "id": 2,
-      "color": "red",
-      "count": 3
-    },
-    {
-      "id": 3,
-      "color": "blue",
-      "count": 2
-    },
-    {
-      "color": "chocolate",
-      "count": 7,
-      "id": 4
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 5
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 6
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 7
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 8
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 9
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 10
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 11
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 12
-    },
-    {
-      "color": "chocolate",
-      "count": 1,
-      "id": 13
-    },
-    {
-      "color": "coral",
-      "count": 1,
-      "id": 14
+      "count": 11
     },
     {
       "color": "coral",
       "count": 1,
       "id": 15
-    },
-    {
-      "color": "coral",
-      "count": 1,
-      "id": 16
-    },
-    {
-      "color": "coral",
-      "count": 1,
-      "id": 17
-    },
-    {
-      "color": "magenta",
-      "count": 4,
-      "id": 18
-    },
-    {
-      "color": "magenta",
-      "count": 5,
-      "id": 19
-    },
-    {
-      "color": "magenta",
-      "count": 4,
-      "id": 20
-    },
-    {
-      "color": "magenta",
-      "count": 5,
-      "id": 21
-    },
-    {
-      "color": "magenta",
-      "count": 5,
-      "id": 22
     }
   ]
 }
