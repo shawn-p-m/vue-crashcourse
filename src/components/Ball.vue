@@ -3,8 +3,10 @@
     <h2>Ball #{{ ball.id }}</h2>
 
     <p>How many Balls? {{ ball.count }}</p>
-    <button @click="minusBall">-</button>
-    <button @click="addBall">+</button>
+    <div>
+      <button @click="minusBall">-</button>
+      <button @click="addBall">+</button>
+    </div>
   </div>
 </template>
 
@@ -37,7 +39,13 @@ export default {
 
 <style lang="scss" scoped>
 .ball {
-  padding: 1rem;
+  padding: 2rem;
+  flex-direction: column;
+  display: flex;
+  margin: 1rem auto;
+  width: fit-content;
+  background-color: lightgray;
+  border-radius: 100px;
 }
 
 button {
